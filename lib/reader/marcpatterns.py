@@ -18,10 +18,15 @@ MATERIALIZE = {
 '730': ('uniformTitle', {'marcrType': 'Title'}),
 '830': ('uniformTitle', {'marcrType': 'Title'}),
 
-'260a': ('place', {'marcrType': 'Place'}),
-'260b': ('provider', {'marcrType': 'Organization'}),
-'260e': ('place', {'marcrType': 'Place'}),
-'260f': ('provider', {'marcrType': 'Organization'}),
+'260a': ('providerPlace', {'marcrType': 'Place'}),
+'260b': ('providerName', {'marcrType': 'Organization'}),
+'260c': ('copyrightDate', {'marcrType': 'Date'}),
+
+
+'260e': ('manufacturerPlace', {'marcrType': 'Place'}),
+'260f': ('manufacturerName', {'marcrType': 'Organization'}),
+'260g': ('manufactureDate', {'marcrType': 'Date'}),
+
 
 '300': ('physicalDescription', {'marcrType': 'Measurement'}),
 
@@ -112,10 +117,10 @@ FIELD_RENAMINGS = {
 '256a': 'computerFilecharacteristics',
 '260a': 'label',
 '260b': 'label',
-'260c': 'copyrightDate',
-'260e': 'place',
+'260c': 'label',
+'260e': 'label',
 '260f': 'label',
-'260g': 'date',
+'260g': 'label',
 '264a': 'providerPlace',
 '264b': 'providerName',
 '264c': 'providerDate', 
@@ -289,6 +294,7 @@ WORK_FIELDS = set([
 '500',
 '502',
 '504',
+'505',
 '508',
 '510',
 '511',
